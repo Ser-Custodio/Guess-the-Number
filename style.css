@@ -1,0 +1,31 @@
+#gameTitle{
+    border-radius: 20px;
+    background-color: #ff8100;
+    width: 500px;
+    margin: auto;
+}
+
+.instructions{
+    border: 1px solid #ff8100;
+    width: 600px;
+    margin: auto;
+}
+.correct{
+    color: #5fff46;
+}
+.wrong{
+    color: #ff0014;
+}
+#main, #gameSize, #letsPlay{
+    display: none;
+}
+
+.langChoice, #gameSize{
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    width: 60%;
+}
+.start{
+    margin: auto;
+}

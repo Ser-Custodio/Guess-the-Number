@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="logic.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Title</title>
+</head>
+<body>
+<div id="langChoice" class="langChoice">
+    <h1>CHOOSE YOUR LANGUAGE / CHOISISSEZ VOTRE LANGUE</h1>
+    <input id="eng" class="form-check-input" type="radio" name="lang" value="eng">English <br>
+    <input id="fr" class="form-check-input" type="radio" name="lang" value="fr">Français <br><br>
+    <button class="btn btn-primary" onclick="getLang(); display()">Choose / Choisissez</button>
+</div>
+<div id="gameSize">
+    <h2 id="maxSize"></h2> <input id="inputMax" type="number"> <button id="maxNumber" onclick="setMaxNb()" class="btn btn-primary"></button>
+</div>
+<div id="main" class="langChoice">
+    <h1 id="gameTitle"></h1><br><br>
+    <div id="instructions" class="instructions">
+        <h2>Instructions</h2>
+        <div id="inst1"></div>
+    </div>
+    <br><br>
+    <button id="startBtn" class="btn btn-success start" onclick="startGame()"></button>
+    <div id="letsPlay">
+        <h2 id="playTitle"></h2>
+        <input id="guess" type="number" min="1"  name="guess">
+        <button id="guessBtn" onclick="guessNumber()"></button>
+        <h3 id="message"></h3>
+        <h4 id="nbTry"> <h4 id="trNb"></h4> </h4>
+        <h4 id="triedNb"> <h4 id="triedNumbers"></h4></h4>
+    </div>
+</div>
+</body>
+</html>
