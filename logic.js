@@ -5,14 +5,14 @@ var x = 0;
 var startBtn = ['START', 'COMMENCER']
 var playTitle = ['LET\'S PLAY', 'JOUONS'];
 var guessBtn = ['GUESS', 'DEVINEZ'];
-var tries = ['Number of tries: ', 'Nombre d\'essaies : '];
+var tries = ['Number of tries: ', 'Nombre d\'essais : '];
 var triedNumber = []
 var numbersTries = ['Tried numbers: ', 'Numéros essayés : ']
 var size = []
 var title = ['GUESS THE NUMBER', 'DEVINEZ LE NOMBRE'];
 var maxNb = 0;
 
-var maxSize = ['Choose the max number', 'Choisissez le numèro maximale'];
+var maxSize = ['Choose the max number', 'Choisissez le numéro maximal'];
 var maxNumber = ['Choose', 'Choisissez'];
 
 function getLang() {
@@ -42,17 +42,17 @@ var instructions = ['<p>A random number between 1 and the max number will be gen
 '<p>You\'ll have 5 trys to guess the number.</p>' +
 '<p>After each try, you can get 3 types of message:</p>' +
 '<ul>' +
-'<li class="correct">You guessed correctly</li>' +
-'<li class="wrong">Wrong choice, the number you chose is bigger than the right number</li>' +
-'<li class="wrong">Wrong choice, the number you chose is smaller than the right number</li>' +
+'<li class="correct">YOU GUESSED CORRECTLY</li>' +
+'<li class="wrong">WRONG CHOICE, try a bigger number</li>' +
+'<li class="wrong">WRONG CHOICE, try a smaller number</li>' +
 '</ul>',
-    '<p>Un nombre aléatoire compris entre 1 et le numero maximale sera généré.</p>' +
+    '<p>Un nombre aléatoire compris entre 1 et le numéro maximal sera généré.</p>' +
     '<p>Vous aurez 5 essais pour deviner le nombre.</p>' +
     '<p>Après chaque essai, vous pouvez obtenir 3 types de message:</p>' +
     '<ul>' +
-    '<li class="correct">Vous avez bien deviné</li>' +
-    '<li class="wrong">Mauvais choix, le nombre que vous avez choisi est plus grand que le bon nombre</li>' +
-    '<li class="wrong">Mauvais choix, le nombre que vous avez choisi est plus petit que le bon nombre</li>' +
+    '<li class="correct">VOUS AVEZ BIEN DEVINé</li>' +
+    '<li class="wrong">MAUVAIS CHOIX, essayez un chiffre plus grand</li>' +
+    '<li class="wrong">MAUVAIS CHOIX, essayez un chiffre plus petit</li>' +
     '</ul>']
 
 function startGame() {
